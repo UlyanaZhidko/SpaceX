@@ -1,3 +1,6 @@
+
+//установка видео
+
 var instance = new vidbg('.video', {
     mp4: 'video/world.mp4', // URL or relative path to MP4 video
     webm: 'video/world.webm', // URL or relative path to webm video
@@ -5,7 +8,14 @@ var instance = new vidbg('.video', {
     overlay: false, // Boolean to display the overlay or not
 });
 
+
+
+//установка паралакса
 var rellax = new Rellax('.rocket'); 
 if (document.body.clientWidth < 576) {
     rellax.destroy();
 }
+
+
+//установка анимации
+AOS.init();
